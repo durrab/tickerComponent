@@ -6,6 +6,8 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
     filename: "./index.html"
 });
 module.exports = {
+
+    devtool: 'cheap-module-source-map',
     entry: path.join(__dirname, "tickerApp/src/index.js"),
     output: {
         path: path.join(__dirname, "tickerComponent/dist"),
